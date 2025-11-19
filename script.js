@@ -581,8 +581,8 @@ async function montarGrafico() {
     const cores = ['#e53935', '#43a047', '#8e24aa', '#1565c0', '#ff9800', '#64b5f6'];
     const nomesAbreviados = ['Lula', 'Tarcísio', 'Ciro', 'Caiado', 'Zema', 'Ratinho'];
     
-    // Usa sempre o último índice do período geral (não do filtrado)
-    const lastIdx = registros.length - 1;
+    // Usa sempre o último índice do período geral (não do filtrado), baseado no comprimento dos dados pré-calculados
+    const lastIdx = mediaMovelData.datas.length - 1;
     
     // Coleta dados de todos os candidatos
     const dados = [];
@@ -948,7 +948,7 @@ async function montarGraficoSegundoTurno() {
       const cores = ['#e53935', '#43a047'];
       const nomesJson = ['Lula', 'Freitas'];
 
-      const lastIdx = registros.length - 1;
+      const lastIdx = mediaMovelData.datas.length - 1;
 
       const dados = [];
       candidatos.forEach((displayName, idx) => {

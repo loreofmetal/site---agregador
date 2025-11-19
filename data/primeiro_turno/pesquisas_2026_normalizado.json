@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "6–9 Nov 2025",
+    "candidatos": {
+      "Lula": 35.0,
+      "Freitas": 16.0,
+      "Gomes": 12.0,
+      "Zema": 5.0,
+      "Caiado": 4.0
+    }
+  },
+  {
     "instituto": "Paraná Pesquisas",
     "data": "21–24 Oct 2025",
     "candidatos": {
@@ -319,6 +330,14 @@
       "Gomes": 9.0,
       "Zema": 3.0,
       "Caiado": 3.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "6–9 Nov 2025",
+    "candidatos": {
+      "Lula": 41.0,
+      "Freitas": 36.0
     }
   },
   {

@@ -1,5 +1,19 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "6–9 Nov 2025",
+    "candidatos": {
+      "Lula": 35.0,
+      "Freitas": 16.0,
+      "Gomes": 12.0,
+      "Zema": 5.0,
+      "Caiado": 4.0,
+      "BlankNullUndec.": 28.0,
+      "Sample size": 2.004,
+      "Lead": 20.0
+    }
+  },
+  {
     "instituto": "Paraná Pesquisas",
     "data": "21–24 Oct 2025",
     "candidatos": {
@@ -422,6 +436,17 @@
       "BlankNullUndec.": 19.0,
       "Sample size": 4.5,
       "Lead": 17.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "6–9 Nov 2025",
+    "candidatos": {
+      "Lula": 41.0,
+      "Freitas": 36.0,
+      "BlankNullUndec.": 23.0,
+      "Sample size": 2.004,
+      "Lead": 5.0
     }
   },
   {

@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 WIKI_URL = "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_presidential_election"
-OUT_FILE = Path("data/pesquisas_2026.json")
+OUT_FILE = Path("data/primeiro_turno/pesquisas_2026.json")
 
 # Função utilitária para limpar nomes de candidatos
 import re
@@ -37,15 +37,30 @@ def main():
         header_texts = [clean_candidate(c.get_text(strip=True)) for c in header_cells]
         for row in rows[1:]:
             cells = row.find_all(["td", "th"])
-            if len(cells) != len(header_texts):
-                continue
             if len(cells) < 2:
                 continue
+            # Use minimum of header count and cell count to handle variable row lengths
+            cell_count = min(len(header_texts), len(cells))
             cell_texts = [c.get_text(strip=True) for c in cells]
             instituto = cell_texts[0]
             data = cell_texts[1]
+            
+            # Skip rows with invalid dates (must contain month name or be in proper date format)
+            # Valid patterns: "6–9 Nov 2025", "29 Sep – 6 Oct 2025", etc.
+            if not data or len(data) < 5:
+                continue
+            valid_date = False
+            months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+                     'January', 'February', 'March', 'April', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+            for month in months:
+                if month in data:
+                    valid_date = True
+                    break
+            if not valid_date:
+                continue
+            
             candidatos = {}
-            for i in range(2, len(header_texts)):
+            for i in range(2, cell_count):
                 if i >= len(cell_texts):
                     continue
                 cand_name = header_texts[i]

@@ -8,8 +8,8 @@ import json
 from pathlib import Path
 from collections import Counter
 
-IN_FILE = Path("data/pesquisas_2026.json")
-OUT_FILE = Path("data/pesquisas_2026_normalizado.json")
+IN_FILE = Path("data/primeiro_turno/pesquisas_2026.json")
+OUT_FILE = Path("data/primeiro_turno/pesquisas_2026_normalizado.json")
 
 # Mapeamento manual por ordem (ajustar conforme necessário)
 CANDIDATE_ORDER = [
