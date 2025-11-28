@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "CNT",
+    "data": "19–23 Nov 2025",
+    "candidatos": {
+      "Lula": 42.0,
+      "Freitas": 21.7,
+      "Ratinho": 11.8,
+      "Zema": 5.7
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "6–9 Nov 2025",
     "candidatos": {
@@ -330,6 +340,14 @@
       "Gomes": 9.0,
       "Zema": 3.0,
       "Caiado": 3.0
+    }
+  },
+  {
+    "instituto": "CNT",
+    "data": "19–23 Nov 2025",
+    "candidatos": {
+      "Lula": 45.7,
+      "Freitas": 39.1
     }
   },
   {

@@ -1,5 +1,18 @@
 [
   {
+    "instituto": "CNT",
+    "data": "19–23 Nov 2025",
+    "candidatos": {
+      "Lula": 42.0,
+      "Freitas": 21.7,
+      "Ratinho": 11.8,
+      "Zema": 5.7,
+      "BlankNullUndec.": 18.8,
+      "Sample size": 2.002,
+      "Lead": 20.3
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "6–9 Nov 2025",
     "candidatos": {
@@ -436,6 +449,17 @@
       "BlankNullUndec.": 19.0,
       "Sample size": 4.5,
       "Lead": 17.0
+    }
+  },
+  {
+    "instituto": "CNT",
+    "data": "19–23 Nov 2025",
+    "candidatos": {
+      "Lula": 45.7,
+      "Freitas": 39.1,
+      "BlankNullUndec.": 15.1,
+      "Sample size": 2.002,
+      "Lead": 6.6
     }
   },
   {

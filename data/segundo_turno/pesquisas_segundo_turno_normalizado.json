@@ -1,5 +1,13 @@
 [
   {
+    "data": "23 Nov 2025",
+    "instituto": "CNT",
+    "candidatos": {
+      "Lula": 45.7,
+      "Freitas": 39.1
+    }
+  },
+  {
     "data": "9 Nov 2025",
     "instituto": "Quaest",
     "candidatos": {
